@@ -224,3 +224,36 @@ input:focus{
 .footer div ul li {
     padding-left: 27px;
 }
+
+
+/* Media Queries */
+@media (max-width: 638px) {
+  .footer {
+      flex-direction: column-reverse;
+      align-items: center;
+  }
+  .footer div:nth-child(2) ul {
+      margin-bottom: 15px;
+  }
+  .footer div:nth-child(1) ul li:last-child {
+      display: none;
+  }
+}
+
+@media (max-width: 584px) {
+  .main__form {
+      width: 100%;
+  }
+  .main__input {
+      padding: 0 30px;
+  }
+}
+
+@media (max-width: 425px) {
+  .main__input {
+      padding: 0 15px;
+  }
+  .main__hero img {
+      width: 220px;
+  }
+}
